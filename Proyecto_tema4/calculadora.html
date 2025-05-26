@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Estequiométrica</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+            </ul>
+        </nav>
+        <h1>Calculadora Estequiométrica Interactiva</h1>
+    </header>
+
+    <main class="contenedor">
+        <section class="calculadora">
+            <label for="ecuacion">Ecuación a Balancear</label>
+            <textarea id="ecuacion" class="input-texto" placeholder="Ej: H2 + O2 = H2O"></textarea>
+
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="mostrar-balanceada">
+                <label for="mostrar-balanceada">Mostrar ecuación balanceada</label>
+            </div>
+
+            <label for="balanceada">Ecuación Balanceada</label>
+            <textarea id="balanceada" class="output-texto" readonly></textarea>
+
+            <table class="tabla-compuestos">
+                <thead>
+                    <tr>
+                        <th>Compuesto</th>
+                        <th>Moles</th>
+                        <th>Gramos</th>
+                        <th>Litros</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-compuestos">
+                    <!-- Filas generadas dinámicamente -->
+                </tbody>
+            </table>
+
+            <div class="botones">
+                <button id="calcular">Calcular</button>
+                <button id="borrar">Borrar</button>
+            </div>
+        </section>
+    </main>
+
+    <table id="tabla-compuestos">
+        <!-- filas de compuestos acá -->
+    </table>
+
+
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
