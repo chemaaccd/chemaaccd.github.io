@@ -1,0 +1,156 @@
+/* css de trnsiciones leve ================= se ve increíble*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-bottom: 50px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #003060;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.activo {
+    background-color: #0055aa;
+    border-radius: 5px;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.4s ease;
+}
+
+label,
+select,
+textarea,
+table {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+}
+
+textarea.input-texto,
+textarea.output-texto {
+    padding: 10px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checkbox-container label {
+    margin-left: 8px;
+}
+
+button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+.tabla-compuestos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+.tabla-compuestos th,
+.tabla-compuestos td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: fadeIn 2s ease-in;
+}
